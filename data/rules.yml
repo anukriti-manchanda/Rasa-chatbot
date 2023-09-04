@@ -1,0 +1,205 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  
+- rule: Activate weather action
+  steps:
+  - intent: ask_weather
+  - action: action_get_weather
+
+- rule: max seats
+  steps:
+  - intent: maximum seats that can be booked
+  - action: utter_max_seats
+
+- rule: E ticket
+  steps:
+  - intent: e-ticket
+  - action: utter_e_ticket
+
+- rule: multicityTrip
+  steps:
+  - intent: multicity trip
+  - action: utter_multicity_trip
+
+- rule: infant_Ticket Booking
+  steps:
+  - intent: infant ticket booking
+  - action: utter_infant_ticket_booking
+
+- rule: zero flights error
+  steps:
+  - intent: zero flights result error
+  - action: utter_zero_flights_result_error
+
+- rule: frequent flyer
+  steps:
+  - intent: frequent flyer number
+  - action: utter_frequent_flyer_number
+
+- rule: airlines_Result
+  steps:
+  - intent: airline results issue
+  - action: utter_airline_results_issue
+
+- rule: payment_Display 
+  steps:
+  - intent: payment display issue
+  - action: utter_payment_display_issue
+
+- rule: processing_Fee_querry
+  steps:
+  - intent: processsing fee querry 
+  - action: utter_processsing_fee_querry 
+
+- rule: increased fee fares 
+  steps:
+  - intent: increased fee fares querry 
+  - action: utter_increased_fee_fares 
+
+- rule: confirm_booking_how 
+  steps:
+  - intent: how to confirm the booking 
+  - action: utter_how_to_confirm_booking 
+
+- rule: necessary to confirm booking 
+  steps:
+  - intent: is it necessary to confirm booking
+  - action: utter_necessary_to_confirm_booking
+
+- rule: confirm_seat assignments 
+  steps:
+  - intent: confirm seat assignments
+  - action: utter_confirm_seat_assignments
+
+- rule: eticket_details  
+  steps:
+  - intent: eticket details 
+  - action: utter_eticket_details 
+
+- rule: boarding pass for e-ticket  
+  steps:
+  - intent: boarding pass for an e ticket  
+  - action: utter_boarding_pass_for_an_e_ticket 
+
+- rule: e-ticket_confirmation_email
+  steps:
+  - intent: e-ticket confirmation email at checkin 
+  - action: utter_e-ticket_confirmation_email_at_checkin
+
+- rule: paper Tickets  
+  steps:
+  - intent: paper tickets 
+  - action: utter_paper_tickets
+
+- rule: invoice for booking  
+  steps:
+  - intent: invoice for my booking 
+  - action: utter_invoice_for_my_booking 
+
+- rule: pay anything extra at the airports  
+  steps:
+  - intent: pay anything extra at the airport 
+  - action: utter_pay_anything_extra_at_airport 
+
+- rule: id proof required during check in  
+  steps:
+  - intent: id proof required at the time of check in? 
+  - action: utter_id_proof_required_at_check in?  
+
+- rule: adding child's ticket to bookingg  
+  steps:
+  - intent: adding child's ticket to my booking 
+  - action: utter_adding_child_ticket_booking 
+
+- rule: spelling mistake while booking a ticket   
+  steps:
+  - intent: spelling mistake in name while booking a ticket  
+  - action: utter_spelling_mistake_while_booking_ticket  
+
+- rule: print ticket  
+  steps:
+  - intent: how to print the ticket 
+  - action: utter_how_to_print_ticket
+
+- rule: regain my forgotten tripId  
+  steps:
+  - intent: regain my forgotten trip Id 
+  - action: utter_regain_my_forgotten_trip_Id
+
+- rule: wrong prefix Selection  
+  steps:
+  - intent: wrong prefix selection 
+  - action: utter_wrong_prefix_selection
+
+- rule: booking tickets for friends and family from account  
+  steps:
+  - intent: booking tickets for friends and family from one's account 
+  - action: utter_booking_tickets_for_friends_and_family
+
+- rule: luggages permitted  
+  steps:
+  - intent: luggage permitted 
+  - action: utter_luggage_permitted 
+
+- rule: arrange wheelchairs  
+  steps:
+  - intent: arrangement for wheelchairs 
+  - action: utter_arrangement_for_wheelchairs
+
+- rule: cancel flight reservations  
+  steps:
+  - intent: cancel flight reservation 
+  - action: utter_cancel_flight_reservation
+
+- rule: flight cancelled_get refund  
+  steps:
+  - intent: flight cancelled by airline get refund
+  - action: utter_flight_cancelled_by_airline_get_refund
+
+- rule: cancellation_charges  
+  steps:
+  - intent: cancellation charges
+  - action: utter_cancellation_charges
+
+- rule: till when i can cancel tickets   
+  steps:
+  - intent: till when i cancel tickets  
+  - action: utter_till_when_i_cancel_tickets 
+
+- rule: on cancellation get refund  
+  steps:
+  - intent: on cancellation how do i get refund 
+  - action: utter_on_cancellation_get_refund
+
+- rule: time taken to process the refund  
+  steps:
+  - intent: time taken to process refund 
+  - action: utter_time_taken_to_process_refund
+
+- rule: no fund received even after days  
+  steps:
+  - intent: no fund received even after many days
+  - action: utter_no_fund_received_even_after_many_days
+
+- rule: how to make changes  
+  steps:
+  - intent: how to make changes to flight reservation 
+  - action: utter_how_to_make_changes_to_flight_reservation
+
+- rule: greet  
+  steps:
+  - intent: greet 
+  - action: utter_greet
+
+

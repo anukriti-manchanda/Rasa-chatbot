@@ -1,0 +1,57 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: User asks about the weather
+  steps:
+  - intent: greet  # You can replace this with your actual greeting intent if you have one
+  - action: utter_greet  # Replace this with your actual greeting response action
+  - intent: ask_weather
+  - slot_was_set:
+    - city: New Delhi
+  - action: action_get_weather
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: give city 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: city
+  - slot_was_set:
+    - city: New Delhi
+  - action: action_get_weather
+
+- story: e ticket 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: e-ticket
+  - action: utter_e_ticket

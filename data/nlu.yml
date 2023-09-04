@@ -1,0 +1,717 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_weather
+  examples: |
+    - What's the weather like in [New York](city)?
+    - How's the weather in [London](city) today?
+    - Tell me the weather forecast for [Paris](city).
+    - What's the temperature in [San Francisco](city) right now?
+    - What temperature does it feel like in [Germany](city)
+    - Is it sunny today in [london](city)
+    - Is it windy today in [Stuttgart](city)
+    - How was the weather in [London](city) yesterday?
+    - How's the weather like in [New York](city) today?
+- intent: city
+  examples: |
+    - [New York](city)
+    - [London](city)
+    - [Paris](city)
+    - [San Francisco](city)
+    - [Germany](city)
+    - [California](city)
+    - [Rome](city)
+
+- intent: e-ticket
+  examples: |
+    - what's an e ticket?
+    - What's an e-ticket?
+    - What is an e ticket?
+    - What is an e-ticket?
+    - what's an e ticket
+    - What's an e-ticket
+    - What is an e ticket
+    - What is an e-ticket
+    - What is an electronic ticket?
+    - Can you explain what an e-ticket is?
+    - Could you define an e-ticket for me?
+    - Tell me about electronic tickets.
+    - I'm unfamiliar with e-tickets, could you enlighten me?
+    - Can you give me information about e-tickets?
+    - Please describe what an e-ticket means.
+    - I've heard of e-tickets, but I'm not sure what they are. Can you clarify?
+    - What exactly is meant by the term "e-ticket"?
+    - Could you provide a brief overview of e-tickets?
+    - What's the concept behind e-tickets?
+    - I'd like to know more about e-tickets. What are they?
+    - Can you give me a rundown on e-tickets?
+    - What do people mean when they talk about e-tickets?
+    - Can you shed some light on the idea of e-tickets?
+    - Please elaborate on the term "e-ticket"
+    - What's the definition of an e-ticket?
+    - Tell me about the use of e-ticket.
+    - Could you provide some insights into e-tickets?
+    - What's the purpose of using e-tickets?
+
+- intent: maximum seats that can be booked
+  examples: |
+    - What is the maximum number of seats I can book?
+    - What's the limit on the number of seats I can book?
+    - Is there a maximum count for the seats I can reserve?
+    - What's the maximum seat reservation allowed per booking?
+    - Is there a cap on the number of seats I can book at once?
+    - Could you inform me about the highest number of seats I'm allowed to book?
+    - What's the maximum seat allocation for a single booking?
+    - Can you let me know the maximum seat booking limit?
+    - What's the most seats I can book in one go?
+    - Is there a restriction on how many seats I can reserve in a single transaction?
+    - Could you provide information on the maximum seat booking capacity?
+    - What's the upper limit on the number of seats I can reserve simultaneously?
+    - Is there a limit to how many seats I can include in a single booking?
+    - Can you tell me the highest number of seats I'm eligible to book?
+    - What's the maximum count of seats that can be booked at once?
+    - Could you clarify the maximum seat reservation allowance?
+    - What's the cap on seat bookings per transaction?
+    - What's the largest number of seats I'm permitted to book in a single order?
+    - Can you provide details on the maximum seat booking quantity?
+    - Is there a maximum threshold for seat reservations in one booking?
+    - Could you inform me about the maximum number of seats that I can include in my reservation?
+
+- intent: multicity trip
+  examples: |
+    - Can I book a multicity trip?
+    - Is it possible to book a multi-city trip?
+    - Can I make a reservation for a trip with multiple cities?
+    - Am I able to book a trip that includes multiple cities?
+    - Is there an option to book a trip with multiple destinations?
+    - Can I arrange a booking for a trip that involves multiple cities?
+    - Is it allowed to book a journey with multiple city stops?
+    - Do you offer the ability to book trips that span multiple cities?
+    - Could I plan a trip with more than one city in the booking?
+    - Is booking a multi-city itinerary an option?
+    - Can I create a reservation for a trip that covers multiple cities?
+    - Is booking a trip with several cities in the itinerary allowed?
+    - Can I reserve flights for a trip with multiple city segments?
+    - Am I permitted to book a trip with stops in multiple cities?
+    - Is there a way to book a trip that has multiple cities as destinations?
+    - Do you support booking travel with multiple cities included?
+    - Is it within the booking system's capabilities to handle multi-city trips?
+    - Could I book a journey with more than one city in the route?
+    - Is booking a trip that spans multiple cities an option?
+    - Can I organize a booking for a trip that encompasses multiple cities?
+    - Is booking a multi-city travel itinerary a possibility?
+  
+- intent: infant ticket booking
+  examples: |
+    - Can i book tickets for infants?
+    - Is it possible to make reservations for infants?
+    - Can I book tickets for babies or infants?
+    - Am I able to include infants in my booking?
+    - Is there an option to reserve seats for infants?
+    - Can I purchase tickets for my infant during booking?
+    - Is it allowed to add infants to my ticket reservation?
+    - Do you offer the ability to book tickets for young children or infants?
+    - Could I make a booking that includes tickets for infants?
+    - Is booking tickets for infants a possibility?
+    - Can I include my infant in the ticket booking process?
+    - Is there a way to reserve seats for [babies or infants?
+    - Am I permitted to book tickets for infants online?
+    - Is it within the booking system's capabilities to handle tickets for infants?
+    - Can I purchase a ticket for my [baby as part of the booking?
+    - Do you support booking tickets for infants along with adults?
+    - Is booking tickets for young children an option?
+    - Can I book tickets for my child who is an infant?
+    - Is there a process for reserving seats for infants?
+    - Can I organize ticket bookings for infants?
+    - Is booking tickets for newborns possible?
+
+- intent: zero flights result error
+  examples: |
+    - What are the possible reasons for receiving a "zero flight results" error?
+    - Could you explain why I might be getting a "no flight results" error?
+    - What factors could lead to a "zero flight availability" error?
+    - Why am I seeing an error message that says "no flights found"?
+    - What could be causing the "zero flight results" error to appear?
+    - Are there certain conditions that trigger a "no flight options]" error?
+    - What might be the causes of the "no available flights" error message?
+    - Can you shed light on why I'm encountering a "zero flight results" issue?
+    - What circumstances could result in a "no flights available" error?
+    - Could you elaborate on the reasons behind a "no flight results" error?
+    - What could potentially lead to a "no flights found" error on my search?
+    - Is there a list of explanations for the "zero flight results" error?
+    - What conditions might trigger a "no flight options available" error?
+    - Can you help me understand why I'm getting a "no flights available" error?
+    - Are there specific factors causing the "zero flight results" error message?
+    - What are the potential causes of a "no flight results" error in my search?
+    - What factors should I consider when encountering a "no flights found]" error?
+    - Could you provide insights into the common triggers for a "zero flight results" error?
+    - Why am I facing a "no available flights" error despite my search?
+    - What could be the underlying issues causing the "zero flight results" error?
+
+- intent: frequent flyer number 
+  examples: |
+    - Where can I input my frequent flyer number when booking domestic flights?
+    - Could you guide me on where to enter my frequent flyer number during domestic flight booking?
+    - What's the location for entering my frequent flyer number when booking domestic flights?
+    - How do I provide my frequent flyer number while making a booking for domestic flights?
+    - At what point in the booking process can I enter my frequent flyer number for domestic flights?
+    - Can you show me where I should input my frequent flyer number when reserving domestic flights?
+    - I'm unsure where to enter my frequent flyer number while booking domestic flights. Can you help?
+    - When and where should I add my frequent flyer number during the booking of domestic flights?
+    - Is there a specific step where I need to enter my frequent flyer number for domestic flight bookings?
+    - Could you provide instructions on where to enter my frequent flyer number when booking a domestic flight?
+    - What's the process for including my frequent flyer number during the booking of domestic flights?
+    - Is there a designated field for entering my frequent flyer number while reserving domestic flights?
+    - Where do I find the option to input my frequent flyer number when booking domestic flights?
+    - During the booking of domestic flights, where should I enter my frequent flyer number?
+    - Can you explain where I'm supposed to enter my frequent flyer number while making domestic flight reservations?
+    - At which stage of the booking process do I need to provide my frequent flyer number for domestic flights?
+    - I'd like to know where I can enter my frequent flyer number when I book domestic flights. Could you assist?
+    - Where in the booking procedure do I need to insert my frequent flyer number for domestic flights?
+    - Where is the input field for my frequent flyer number located during the booking of domestic flights?
+    - Can you point me to the section where I can enter my frequent flyer number when reserving domestic flights?
+
+- intent: airline results issue 
+  examples: |
+    - I've chosen 6 passengers (adults + children), but I'm not seeing certain airlines in the search results. Why is that?
+    - When selecting 7 passengers, adults and children, I've noticed that certain airlines are missing from the search results. Can you explain why?
+    - I've specified 8 passengers which includes adults and children for the search, yet there are some airlines not showing up. What's the reason?
+    - While searching for flights with 9 passengers (adults and children), I've encountered missing airlines in the results. What could be causing this?
+    - I've input 10 passengers (adults + children) in my search, but I'm puzzled why certain airlines are not visible in the search results. Can you help me understand?
+    - For 6 passengers (adults + children) in my search, I've observed that certain airlines are absent from the search results. Any idea why this might be happening?
+    - When searching for flights for 7 passengers (adults + children), I've noticed that certain airlines are not included in the search results. What could be the cause?
+    - I've indicated 8 passengers (adults + children) in my search, but I'm missing out on some airlines in the results. Can you provide some insight into this?
+    - While looking for flights for 9 passengers (adults + children), I'm facing an issue where some airlines are not appearing in the search results. Can you explain why?
+    - I've entered 10 passengers (adults + children) in my search criteria, but I'm perplexed as to why certain airlines are missing from the results. Any explanation for this?
+
+- intent: payment display issue 
+  examples: |
+    - I completed the booking form, but the screen went blank. My card was charged, but I haven't received an e-ticket. What steps should I take now?
+    - After submitting the booking form, the screen turned blank. Although I was charged, I haven't received my e-ticket. What should I do next?
+    - I encountered a blank screen after submitting my booking form, and I've been charged, but I still haven't received my e-ticket. How should I proceed?
+    - The booking form submission led to a blank screen. I was charged, but I haven't received an e-ticket. What actions should I take at this point?
+    - I got a blank screen right after submitting the booking form, and my payment went through, but I've yet to receive my e-ticket. What's the recommended course of action now?
+    - The booking form submission resulted in a blank screen, and my payment was processed, but I haven't received an e-ticket. What should I do next?
+    - After I submitted the booking form, the screen went blank. I was charged, but I haven't received an e-ticket. What steps do I need to follow now?
+    - I'm facing a blank screen after submitting the booking form, and I've been charged. However, I haven't received my e-ticket. What should be my next move?
+    - Upon submitting the booking form, I got a blank screen. My payment was deducted, but I haven't received the e-ticket. How do I proceed from here?
+    - I completed the booking form, but a blank screen appeared. My payment went through, but I haven't received the e-ticket. What should I do now?
+
+- intent: processsing fee querry 
+  examples: |
+    - Are there any processing fees associated with flight bookings?
+    - Is there a processing fee for making flight reservations?
+    - Do flight bookings come with any additional processing fees?
+    - Are there any charges for processing flight reservations?
+    - Do I need to pay a processing fee for booking flights?
+    - Is there a fee for processing flight reservations?
+    - Are there any extra costs related to processing flight bookings?
+    - Do flight bookings incur processing charges?
+    - Is there a processing fee for flight reservation transactions?
+    - Are there any fees involved in processing flight bookings?
+    - Do I need to budget for processing fees when booking flights?
+    - Is there a fee associated with processing flight reservations?
+    - Are there any additional charges for processing flight bookings?
+    - Do flight bookings involve any processing fees?
+    - Is there a cost for processing flight reservation requests?
+    - Are there processing fees for making flight reservations?
+    - Do flight bookings come with any processing charges?
+    - Is there a processing fee attached to flight reservation transactions?
+    - Are processing fees applicable to flight bookings?
+    - Do flight reservations include any processing fees?
+
+- intent: increased fee fares querry 
+  examples: |
+    - I conducted a flight ticket search and chose a flight, but after entering passenger details, I noticed the fares have gone up. Can you explain why this happened?
+    - I selected a flight after searching for tickets, but when I entered passenger information, the fares increased. What's the reason behind this change?
+    - After choosing a flight from the search results, I provided passenger details, only to find that the fares have risen. Can you shed light on why this occurred?
+    - I picked a flight from the search options and proceeded to enter passenger information. Surprisingly, the fares increased after that. What could be the cause?
+    - I found a flight during my search and confirmed it, but once I entered passenger details, the fares went up. Can you help me understand the reason behind this increase?
+    - After selecting a flight, I provided passenger details, and the fares suddenly increased. Could you clarify why this change occurred?
+    - I booked a flight I found in the search results and moved on to enter passenger details. However, I noticed that the fares have risen. What might have caused this change?
+    - I saw a flight I wanted after searching for tickets, and after entering passenger information, the fares increased unexpectedly. Can you explain the reason behind this price change?
+    - Once I selected a flight and proceeded to enter passenger details, I saw that the fares have increased. Can you help me understand why the prices changed?
+    - I identified a flight during my search, but after inputting passenger information, the fares increased. What factors might have caused this sudden change in pricing?
+
+- intent: how to confirm the booking 
+  examples: |
+    - What steps should I take to confirm my booking?
+    - Can you guide me on how to finalize and confirm my booking?
+    - What's the process for confirming a booking I've made?
+    - How do I go about confirming my reservation?
+    - Could you explain how I can ensure the confirmation of my booking?
+    - What do I need to do to officially confirm my reservation?
+    - Is there a specific way I should follow to confirm my booking?
+    - What actions do I need to perform in order to confirm my reservation?
+    - Can you provide instructions on how to go about confirming my booking?
+    - How can I complete the process of confirming my reservation?
+    - What's the procedure for making sure my booking is confirmed?
+    - Could you tell me the steps to take for confirming my reservation?
+    - What's the proper way to finalize and confirm my booking?
+    - How can I verify and confirm my booking?
+    - Is there a particular method I need to use to confirm my reservation?
+    - What's the recommended way to ensure the confirmation of my booking?
+    - How do I confirm my booking after making the reservation?
+    - What's the best way to go about confirming a booking I've made?
+    - Can you walk me through the process of confirming my reservation?
+    - What's the protocol for officially confirming my booking?
+
+- intent: is it necessary to confirm booking 
+  examples: |
+    - Is it necessary to confirm my flight reservation before my departure?
+    - Do I have to verify my flight reservation before my travel date?
+    - Should I confirm my flight reservation prior to my flight date?
+    - Do I need to ensure the confirmation of my flight reservation before my departure?
+    - Is it required to double-check and confirm my flight reservation before I fly?
+    - Do I need to go through a confirmation process for my flight reservation before my flight?
+    - Should I take steps to confirm my flight reservation before my scheduled departure?
+    - Is confirming my flight reservation before my flight date a necessary step?
+    - Do airlines expect passengers to confirm their flight reservations before traveling?
+    - Is it standard procedure to confirm flight reservations before the travel date?
+    - Is confirming my flight reservation a recommended practice before flying?
+    - Should I make sure to confirm my flight reservation before I embark on my journey?
+    - Do I need to validate or confirm my flight reservation before I take off?
+    - Is there an expectation to confirm my flight reservation in advance of my flight?
+    - Is confirming my flight reservation a usual requirement before flying?
+    - Is it customary to verify and confirm flight reservations before the flight date?
+    - Do airlines typically require passengers to confirm their flight reservations before departure?
+    - Is confirming a flight reservation before flying something I should do?
+    - Should I make it a point to confirm my flight reservation before I travel?
+    - Is confirming flight reservations a common practice before the flight date?
+
+
+- intent: confirm seat assignments 
+  examples: |
+    - Can I find a method to verify my assigned seats?
+    - Is there a process for confirming the seat assignments I've been given?
+    - Is there a way to ensure the confirmation of my selected seats?
+    - Can I check or confirm my chosen seat assignments?
+    - Do you have a way for me to confirm the seats I've been assigned?
+    - Is there a method to confirm the seat choices I've made?
+    - Can I double-check or confirm my seat selections?
+    - Is there a way for me to validate my seat assignments?
+    - Can I verify and confirm the seats I've selected?
+    - Is there a procedure to confirm my allocated seats?
+    - Do you offer a means to confirm the seat assignments I've received?
+    - Can I confirm the seats I've been assigned using a specific method?
+    - Is there a way for me to check and confirm the seat assignments I've made?
+    - Is there a process for me to confirm the seating choices I've selected?
+    - Can I ensure the confirmation of the seats I've reserved?
+    - Is there a method by which I can confirm my chosen seat assignments?
+    - Can I verify the assigned seats and ensure their confirmation?
+    - Is there a way for me to confirm the seats I've been allocated?
+    - Can I confirm my seat selections using a specific approach?
+    - Is there a procedure in place to confirm the seat assignments I've received?
+
+
+- intent: eticket details 
+  examples: |
+    - What's the process for obtaining my e-ticket details?
+    - How can I retrieve the details of my e-ticket?
+    - Can you guide me on how to access my e-ticket information?
+    - What steps do I need to follow to get my e-ticket details?
+    - How do I go about obtaining the details of my e-ticket?
+    - Is there a way for me to retrieve the specifics of my e-ticket?
+    - Could you explain how I can get the details of my e-ticket?
+    - What's the procedure for accessing my e-ticket information?
+    - How can I find out the details of my e-ticket?
+    - Can you help me understand how to get my e-ticket details?
+    - What's the recommended way to obtain my e-ticket information?
+    - Is there a specific method to get my e-ticket details?
+    - How can I get a hold of my e-ticket specifics?
+    - Could you inform me about how I can obtain my e-ticket details?
+    - What's the best way to retrieve the details of my e-ticket?
+    - Is there a particular process to follow to get my e-ticket information?
+    - How do I access the details of my e-ticket?
+    - Can you guide me on how to retrieve my e-ticket details?
+    - What's the process for me to get my e-ticket information?
+    - How can I obtain the details of my e-ticket?
+
+
+- intent: boarding pass for an e ticket 
+  examples: |
+    - What's the procedure for obtaining a boarding pass for an e-ticket?
+    - How can I get my boarding pass for an e-ticket?
+    - Can you guide me on how to acquire a boarding pass for my e-ticket?
+    - What steps do I need to follow to get a boarding pass for an e-ticket?
+    - How do I go about obtaining a boarding pass for my e-ticket?
+    - Is there a way for me to retrieve my boarding pass for an e-ticket?
+    - Could you explain how I can get a boarding pass for my e-ticket?
+    - What's the process for accessing my boarding pass for an e-ticket?
+    - How can I find out how to get a boarding pass for my e-ticket?
+    - Can you help me understand how to obtain a boarding pass for my e-ticket?
+    - What's the recommended way to get a boarding pass for an e-ticket?
+    - Is there a specific method to get a boarding pass for an e-ticket?
+    - How can I get a hold of my boarding pass for an e-ticket?
+    - Could you inform me about how I can obtain a boarding pass for my e-ticket?
+    - What's the best way to retrieve a boarding pass for an e-ticket?
+    - Is there a particular process to follow to get a boarding pass for an e-ticket?
+    - How do I access my boarding pass for an e-ticket?
+    - Can you guide me on how to retrieve my boarding pass for an e-ticket?
+    - What's the process for me to get a boarding pass for an e-ticket?
+    - How can I obtain a boarding pass for my e-ticket?
+
+- intent: e-ticket confirmation email at checkin
+  examples: |
+    - Is it necessary to present my e-ticket confirmation email at the airline check-in counter?
+    - Do I need to show my e-ticket confirmation email when checking in at the airline counter?
+    - Should I bring my e-ticket confirmation email to the airline check-in counter?
+    - Is it required to have my e-ticket confirmation email for check-in at the airline counter?
+    - Do I have to display my e-ticket confirmation email when checking in at the airline counter?
+    - Am I expected to show my e-ticket confirmation email when I check in at the airline counter?
+    - Is it a standard practice to provide my e-ticket confirmation email during check-in at the airline counter?
+    - Should I have my e-ticket confirmation email handy for the airline check-in counter?
+    - Is showing my e-ticket confirmation email necessary at the airline check-in counter?
+    - Is it common to present my e-ticket confirmation email at the airline check-in counter?
+    - Do I need to bring my e-ticket confirmation email for verification at the airline check-in counter?
+    - Is it expected that I show my e-ticket confirmation email when checking in with the airline?
+    - Is having my e-ticket confirmation email a requirement for check-in at the airline counter?
+    - Is it advised to carry my e-ticket confirmation email to the airline check-in counter?
+    - Do I have to provide my e-ticket confirmation email during the check-in process at the airline counter?
+    - Should I ensure that I bring my e-ticket confirmation email for the airline check-in counter?
+    - Is it customary to display my e-ticket confirmation email when checking in at the airline counter?
+    - Do airlines typically ask for my e-ticket confirmation email at the check-in counter?
+    - Is presenting my e-ticket confirmation email a standard procedure at the airline check-in counter?
+    - Do I need to carry my e-ticket confirmation email for presentation at the airline check-in counter?
+
+- intent: paper tickets
+  examples: |
+    - Do you provide physical paper tickets?
+    - Is it possible to get traditional paper tickets from you?
+    - Can I receive paper tickets instead of electronic ones?
+    - Do you offer the option of issuing paper tickets?
+    - Is paper ticket issuance available with your service?
+    - Can I choose to have paper tickets instead of digital ones?
+    - Do you still issue physical paper tickets for flights?
+    - Is the issuance of paper tickets part of your service?
+    - Can I opt for paper tickets for my bookings?
+    - Is paper ticket issuance an option for customers? 
+
+- intent: invoice for my booking
+  examples: |
+    - What's the process for creating an invoice for my booking?
+    - How can I generate an invoice for the reservation I've made?
+    - Can you guide me on how to produce an invoice for my booking?
+    - What steps do I need to follow to create an invoice for my reservation?
+    - How do I go about generating an invoice for my booking?
+    - Is there a way for me to create an invoice for the reservation I've made?
+    - Could you explain how I can get an invoice for my booking?
+    - What's the procedure for obtaining an invoice for my reservation?
+    - How can I find out how to generate an invoice for my booking?
+    - Can you help me understand how to create an invoice for my reservation?
+
+- intent: pay anything extra at the airport 
+  examples: |
+    - Will I incur any additional charges at the airport?
+    - Do I need to make any extra payments at the airport?
+    - Are there any extra fees to be paid upon arrival at the airport?
+    - Should I expect any additional costs at the airport?
+    - Will there be any supplementary charges at the airport?
+    - Do I have to pay any additional amounts when I reach the airport?
+    - Are there any extra expenses I need to consider at the airport?
+    - Is there anything extra that I need to pay for at the airport?
+    - Do I need to budget for any extra payments at the airport?
+    - Should I be prepared for any additional fees at the airport?
+
+- intent: id proof required at the time of check in? 
+  examples: |
+    - Is it necessary to provide identification at the time of check-in?
+    - Do I need to show any form of ID proof during check-in?
+    - Should I have identification with me when checking in?
+    - Do I have to present any ID documentation at the time of check-in?
+    - Is ID verification required when I check in for my flight?
+    - Do I need to show any identification when I arrive for check-in?
+    - Is it standard practice to provide ID proof at the time of check-in?
+    - Should I bring any ID documents with me for check-in?
+    - Is ID verification part of the check-in process?
+    - Do I have to show any ID proof when I check in for my flight?
+
+- intent: adding child's ticket to my booking
+  examples: |
+    - I've already booked my tickets, but I want to add tickets for my child to the same booking. How can I do that?
+    - I've completed my ticket booking, but now I need to include tickets for my child in the same reservation. How do I proceed?
+    - My initial booking is done, but I'd like to add tickets for my child to the existing reservation. What's the process for this?
+    - I've already made my ticket reservations, but I'd like to add my child's tickets to the same booking. How can I achieve this?
+    - I've booked tickets for myself, and now I need to add tickets for my child to the same booking. What steps should I take to do this?
+    - After booking my own tickets, I realized I need to add tickets for my child to the reservation. How do I go about adding them?
+    - I've already secured my own tickets, but I need to add my child's tickets to the booking. How can I update my reservation?
+    - My tickets are booked, but I need to include tickets for my child in the same booking. What's the procedure for adding them?
+    - I've successfully booked my tickets, but I need to add tickets for my child to the reservation. How can I modify my booking?
+    - After confirming my ticket reservations, I realized I need to include tickets for my child in the same booking. How do I make this addition?
+
+- intent: spelling mistake in name while booking a ticket 
+  examples: |
+    - I made a typo in my name while booking a ticket. How can I correct it?
+    - I accidentally misspelled my name during the ticket booking process. What steps should I take to fix it?
+    - I realized there's a mistake in my name on the ticket I booked. How can I get it corrected?
+    - I made an error in my name while making a ticket reservation. How do I go about changing it?
+    - I need to correct a misspelled name on the ticket I booked. What's the process for rectifying this mistake?
+    - I misspelled my name when booking a ticket. How can I update it with the correct spelling?
+    - My name has been misspelled on the ticket I booked. What's the procedure for getting it fixed?
+    - I made a mistake with my name on the ticket reservation. How do I go about getting it corrected?
+    - I need to rectify a name misspelling on the ticket I booked. What do I need to do to change it?
+    - I realized there's a typo in my name on the ticket I booked. How can I get it changed to the correct spelling?
+
+- intent: how to print the ticket 
+  examples: |
+    - What's the process for printing my ticket?
+    - How can I print out my ticket for the flight?
+    - Can you guide me on how to get my ticket printed?
+    - What steps do I need to follow to print my flight ticket?
+    - How do I go about printing my ticket for the flight?
+    - Is there a way for me to get my flight ticket printed?
+    - Could you explain how I can print my flight ticket?
+    - What's the procedure for obtaining a printed copy of my ticket?
+    - How can I find out how to print my flight ticket?
+    - Can you help me understand how to print my ticket for the flight?
+
+- intent: regain my forgotten trip Id 
+  examples: |
+    - Is it possible to retrieve my forgotten trip ID?
+    - Can I recover my trip ID if I've forgotten it?
+    - I forgot my trip ID. Is there a way to retrieve it?
+    - What can I do to get back my trip ID if I've forgotten it?
+    - Is there a method for recovering a trip ID that I've forgotten?
+    - I can't remember my trip ID. How can I get it back?
+    - If I've forgotten my trip ID, is there a way to regain it?
+    - How can I retrieve my trip ID that I've forgotten?
+    - Is there a way to find my forgotten trip ID?
+    - What's the process for recovering a trip ID that I can't recall?
+
+- intent: wrong prefix selection
+  examples: |
+    - I chose the wrong prefix (Mr./Mrs.) for a passenger's name during booking. How can I correct this mistake?
+    - I accidentally selected the incorrect prefix (Mr./Mrs.) for a passenger's name while making a booking. What steps should I take to change it?
+    - I need to change the prefix (Mr./Mrs.) I selected for a passenger's name during the booking process. How can I do this?
+    - I made an error with the prefix (Mr./Mrs.) for a passenger's name on the booking. How do I go about getting it corrected?
+    - I realized I've chosen the wrong prefix (Mr./Mrs.) for a passenger's name on the booking. How can I update this?
+    - I need to correct the prefix (Mr./Mrs.) for a passenger's name on the booking. What's the procedure for changing it?
+    - I mistakenly selected the wrong prefix (Mr./Mrs.) for a passenger's name while booking. How can I get it changed to the right one?
+    - I want to fix the prefix (Mr./Mrs.) I selected for a passenger's name on the booking. How do I go about making this change?
+    - I need to rectify the prefix (Mr./Mrs.) I selected for a passenger's name during the booking. What do I need to do?
+    - I made an incorrect prefix (Mr./Mrs.) selection for a passenger's name while booking. How can I correct this error?
+
+- intent: booking tickets for friends and family from one's account 
+  examples: |
+    - Am I allowed to book tickets for my friends and family using my account?
+    - Is it permissible to use my account to reserve tickets for my friends and family?
+    - Can I make ticket bookings for my friends and family members through my account?
+    - Is there an option to use my account to book tickets for my friends and family?
+    - Am I able to use my account to make reservations for my friends and family?
+    - Is it possible to use my account to purchase tickets for my friends and family?
+    - Can I use my account to arrange ticket bookings for my friends and family?
+    - Is there a way to book tickets for my friends and family members using my account?
+    - Am I eligible to book tickets for my friends and family members through my account?
+    - Is my account suitable for booking tickets on behalf of my friends and family?
+
+- intent: luggage permitted 
+  examples: |
+    - What is the luggage allowance for my flight?
+    - How much baggage am I allowed to carry on my flight?
+    - Can you tell me the maximum luggage I can bring on my flight?
+    - What is the permitted baggage limit for my journey?
+    - How many bags can I take with me on my flight?
+    - Is there a limit to the amount of luggage I can bring on board?
+    - What is the baggage allowance for my specific flight?
+    - How much luggage can I carry with me during my trip?
+    - Can you provide information about the weight limit for my luggage?
+    - What are the restrictions on the amount of baggage I can bring on my flight?
+
+- intent: arrangement for wheelchairs 
+  examples: |
+    - Can you help arrange for wheelchair assistance?
+    - Is it possible for you to organize wheelchair services?
+    - Could you assist in arranging wheelchairs as needed?
+    - Can you facilitate the arrangement of wheelchairs if required?
+    - Is there a way for you to help with arranging wheelchairs?
+    - Could you help coordinate wheelchair services for me?
+    - Is it within your capability to arrange for wheelchairs?
+    - Can you manage the organization of wheelchair assistance?
+    - Can you assist in setting up wheelchair services for me?
+    - Could you arrange for wheelchairs on my behalf?
+
+- intent: cancel flight reservation 
+  examples: |
+    - What's the process for canceling a flight reservation?
+    - How can I go about canceling my flight reservation?
+    - Can you guide me on how to cancel a flight reservation?
+    - What steps do I need to follow to cancel my flight booking?
+    - How do I initiate the cancellation of my flight reservation?
+    - Is there a way for me to cancel my flight reservation?
+    - Could you explain how I can cancel my flight reservation?
+    - What's the procedure for canceling a booked flight?
+    - Can you help me understand how to cancel my flight reservation?
+    - How can I cancel my flight reservation?
+
+- intent: flight cancelled by airline get refund 
+  examples: |
+    - The airline cancelled the flight I booked. How can I request a refund?
+    - My booked flight got cancelled by the airline. How do I go about getting a refund?
+    - The airline cancelled my flight. What steps should I take to get my money refunded?
+    - I received a cancellation notification for the flight I booked. How can I get a refund?
+    - The flight I reserved was cancelled by the airline. How do I proceed to get a refund?
+    - My booked flight got cancelled. What's the process for obtaining a refund?
+    - I need to get a refund after the airline cancelled the flight I booked. How can I do this?
+    - The airline cancelled my flight reservation. How do I get a refund for the cancelled flight?
+    - My flight was cancelled by the airline. How can I ensure I receive a refund for it?
+    - The flight I had booked was cancelled by the airline. What's the procedure for getting my money back?
+
+- intent: cancellation charges 
+  examples: |
+    - Can you provide information about the cancellation fees?
+    - What are the charges for cancelling my reservation?
+    - Could you tell me the cancellation fees for my booking?
+    - What's the cost of cancelling my reservation?
+    - Can you give me details about the charges for cancelling my booking?
+    - What do I need to pay as cancellation charges for my reservation?
+    - Could you inform me about the cancellation fees associated with my booking?
+    - What are the fees for cancelling my reservation?
+    - Can you explain the charges I'll incur if I cancel my booking?
+    - What is the amount of the cancellation charges for my reservation?
+
+- intent: till when i cancel tickets 
+  examples: |
+    - What is the latest time before my flight that I can cancel my tickets?
+    - Until when can I cancel my tickets before my flight departure?
+    - What is the cutoff time for cancelling my tickets before the flight?
+    - How close to the flight departure time can I cancel my tickets?
+    - What is the maximum time window for cancelling my tickets before the flight?
+    - Until what point before my flight can I cancel my tickets?
+    - What is the deadline for cancelling my tickets before the flight?
+    - How much time do I have before the flight to cancel my tickets?
+    - What is the timeframe for cancelling my tickets before the flight departure?
+    - Until what hour before my flight can I cancel my tickets?
+
+- intent: on cancellation how do i get refund 
+  examples: |
+    - After cancelling, how will I receive my refund?
+    - What's the process for getting my money back after I cancel?
+    - When I cancel, how is the refund returned to me?
+    - After I cancel, how do I receive the refund amount?
+    - What is the procedure for receiving the refund after cancellation?
+    - Once I cancel, how will I get my money refunded?
+    - On cancellation, how is the refund provided to me?
+    - After I cancel, what steps are taken to refund my money?
+    - What happens to the refund amount after I cancel my booking?
+    - When I cancel my booking, how is the money returned to me?
+
+- intent: time taken to process refund 
+  examples: |
+    - What's the typical processing time for a refund?
+    - How much time does it usually take to process a refund?
+    - When can I expect a refund to be processed?
+    - How long does it usually take for a refund to be processed?
+    - What is the average duration for processing a refund?
+    - When can I anticipate my refund to be processed?
+    - How many days does it usually take to process a refund?
+    - What's the general timeframe for refund processing?
+    - When should I expect to receive my refund after initiating the process?
+    - How long should I wait for my refund to be processed?
+
+- intent: no fund received even after many days 
+  examples: |
+    - I haven't received my refund even though it's been over 15 days. What should I do?
+    - It's been more than 15 days since I requested a refund, but I haven't received it. What's the next step?
+    - I still haven't received my refund after more than 15 days. What should I do in this situation?
+    - My refund has not been processed even though it's been more than 15 days. What actions should I take?
+    - It's been over 15 days and I haven't received my refund yet. What can I do to resolve this?
+    - I'm concerned because it's been more than 15 days and I haven't received my refund. What can be done?
+    - I haven't seen my refund come through, and it's been more than 15 days. What steps should I take now?
+    - I requested a refund over 15 days ago, but I still haven't received it. What should I be doing at this point?
+    - More than 15 days have passed, and I haven't received my refund yet. How should I proceed?
+    - It's been more than 15 days since my refund request, and I still haven't received it. What's the next course of action?
+
+- intent: how to make changes to flight reservation 
+  examples: |
+    - What's the procedure for making changes to a flight reservation?
+    - How can I modify a flight reservation that I've already made?
+    - Can you guide me on how to make changes to a flight reservation?
+    - What steps do I need to follow in order to update a flight reservation?
+    - How do I go about making changes to a flight booking that I've confirmed?
+    - Is there a way for me to amend a flight reservation that I've already completed?
+    - Could you explain the process of making changes to a flight reservation?
+    - What's the process for updating a booked flight reservation?
+    - Can you help me understand how to modify a flight reservation I've made?
+    - How can I make changes to a flight reservation that I've already booked?

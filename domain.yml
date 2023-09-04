@@ -1,0 +1,226 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- ask_weather
+- city
+- e-ticket
+- maximum seats that can be booked
+- multicity trip
+- infant ticket booking
+- zero flights result error
+- frequent flyer number
+- airline results issue
+- payment display issue
+- processsing fee querry
+- increased fee fares querry
+- how to confirm the booking
+- is it necessary to confirm booking
+- confirm seat assignments
+- eticket details
+- boarding pass for an e ticket
+- e-ticket confirmation email at checkin
+- paper tickets
+- invoice for my booking
+- pay anything extra at the airport
+- id proof required at the time of check in?
+- adding child's ticket to my booking
+- spelling mistake in name while booking a ticket
+- how to print the ticket
+- regain my forgotten trip Id
+- wrong prefix selection
+- booking tickets for friends and family from one's account
+- luggage permitted
+- arrangement for wheelchairs
+- cancel flight reservation
+- flight cancelled by airline get refund
+- cancellation charges
+- till when i cancel tickets
+- on cancellation how do i get refund
+- time taken to process refund
+- no fund received even after many days
+- how to make changes to flight reservation
+entities:
+- city
+slots:
+  city:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_e_ticket:
+  - text: E-ticket stands for Electronic ticket. It takes away the pain and hassle
+      of maintaining a conventional paper ticket, E-ticket is easy to maintain and
+      can be availed via e-mail within 30 minutes of online flight booking. Simply
+      print the E-ticket and produce it to the airline counter when checking-in.
+  utter_max_seats:
+  - text: A maximum of 9 seats can be booked at one time. If you need to book for
+      more than 9 travelers you will have to repeat the booking process for the additional
+      travelers.
+  utter_multicity_trip:
+  - text: This feature is currently not available.
+  utter_infant_ticket_booking:
+  - text: Yes. Infants under the age of 2 years can travel without any separate booking.
+      Make sure that infant must be 24 months or below throughout the booked travel.
+      If the infant is above 24 months during the return journey, the infant ticket
+      will be cancelled which may cause booking of a separate ticket as per the child
+      fare. Remember to carry valid age proof or birth proof documents of the infant.
+      You can book no more than one infant per adult.
+  utter_zero_flights_result_error:
+  - text: To eliminate the error, Clear your browser cache and try the search again.We
+      can’t find flights for the specified route or. Flights are not available on
+      your specified date
+  utter_frequent_flyer_number:
+  - text: We do not have an option of entering the frequent flier number at the time
+      of booking domestic flights. You can mention your frequent flyer number at the
+      time of check-in.
+  utter_airline_results_issue:
+  - text: Some airlines don’t allow us to book more than 4 passengers (adult + children)
+      in one go, so try to search for fewer passengers.
+  utter_payment_display_issue:
+  - text: We’re really sorry for the inconvenience. Please don’t worry. We’ll call
+      you within four hours and complete this booking offline. We suggest you do not
+      try booking again as you may end up getting charged twice.If you have an urgency
+      then call us at 1860 266 2666 or e-mail us at service.bank@kotak.com and we’ll
+      be happy to assist you.
+  utter_processsing_fee_querry:
+  - text: Yes. A charge of 250 INR will be charged per passenger per sector. For example,
+      if you have booked a round trip for 1 person then the processing fee will be
+      250+250=500 INR.
+  utter_increased_fee_fares:
+  - text: Airline fares are dynamic in nature and are based on availability of the
+      seats on the particular flight. There are always chances that the seats selected
+      by you may get sold till the time you complete your booking. Therefore, to minimize
+      the chances of booking failures, you may check the availability of the seats
+      before you proceed with the payment. If you find that the fare has increased
+      at this step, you have the option of refreshing your search or you may go ahead
+      with the booking.
+  utter_how_to_confirm_booking:
+  - text: We’ll send you an SMS (to India numbers only) and an email to confirm your
+      flight booking.
+  utter_necessary_to_confirm_booking:
+  - text: No, you don’t. You just need to carry a printout of your ticket along with
+      a valid ID proof.
+  utter_confirm_seat_assignments:
+  - text: Some airlines will confirm your seat assignments – their rules for doing
+      so vary – so you can call your airline directly to check whether you get to
+      choose your seat.
+  utter_eticket_details:
+  - text: We’ll send your e–ticket details to your registered email address. You can
+      also download your tickets in My Transactions section of your profile page.
+  utter_boarding_pass_for_an_e_ticket:
+  - text: Simply show your e–ticket confirmation email or your e–ticket at the check–in
+      counter. The airline representative will issue your boarding pass.
+  utter_e-ticket_confirmation_email_at_checkin:
+  - text: Yes, you do. Carrying a print-out of your e-ticket is important, make sure
+      you have one.
+  utter_paper_tickets:
+  - text: No, we do not issue paper ticket.
+  utter_invoice_for_my_booking:
+  - text: Your itinerary receipt itself can be used as invoice of booking. Log in
+      to your Kotak Rewards account. You view/print your receipt by clicking on the
+      attachment icon in My Transactions section of your profile page.
+  utter_pay_anything_extra_at_airport:
+  - text: Every airport has its own set of rules. Therefore, the charges depend on
+      the airport you’re flying from.
+  utter_id_proof_required_at_check in?:
+  - text: Yes. Your Photo id proof may be checked by airline authorities. It is strongly
+      recommended that you carry a government-issued Photo id with you during your
+      journey.
+  utter_adding_child_ticket_booking:
+  - text: Sorry! We do not allow child below 12 years to be booked individually. Please
+      contact your airline to create the booking of child directly with them.
+  utter_spelling_mistake_while_booking_ticket:
+  - text: You can call us to check if the airline you’ve booked with entertains change–of–name
+      requests. Most of them do, and we can pass on your request. However, if the
+      airline doesn’t allow it, you’ll have to cancel and re–book the ticket.
+  utter_how_to_print_ticket:
+  - text: Log in to your Kotak Rewards account. You view/print your receipt by clicking
+      on the attachment icon in My Transactions section.
+  utter_regain_my_forgotten_trip_Id:
+  - text: Log in to your Kotak Rewards account. You view your receipt by clicking
+      on the attachment icon in My Transactions sectionour trip id will be visible
+      against your trip details.
+  utter_wrong_prefix_selection:
+  - text: Your airline may or may not support name change request. Call us and tell
+      us your trip ID, we’ll find out if your airline supports title change and pass
+      on your details to them. If the airline doesn’t allow title change, you’ll have
+      to cancel and re–book the ticket with the correct title.
+  utter_booking_tickets_for_friends_and_family:
+  - text: Yes, provided you have all the details belonging to the passengers you want
+      to book for. Provide the details when you’re asked to enter traveler details
+      at the time of booking.
+  utter_luggage_permitted:
+  - text: Cabin and checked-in baggage limit varies from airline to airline. Some
+      airlines have baggage weight restrictions and others have a specific number
+      of pieces permitted. Please note that restrictions on baggage apply to both
+      checked–in bags as well as cabin baggage. Often, you’ll be asked to pay for
+      any checked–in luggage that exceeds the weight permitted. Cabin luggage that
+      exceeds the weight limit is not permitted and will have to be checked in. Please
+      check with your airline.
+  utter_arrangement_for_wheelchairs:
+  - text: Sorry, we do not support this feature currently. Please contact the airline
+      directly.
+  utter_cancel_flight_reservation:
+  - text: We have simplified cancellation process as well. Moreover, we facilitate
+      checking your refund amount before you decide to go ahead with the cancellation.
+      Here’s how:Log in to your Kotak Rewards account if you aren’t already signed
+      in.Once you have signed in, please go to ‘My Transactions’ section to see your
+      transactions listed there. Pick the one you want to cancel and click on the
+      Cancel action associated with it. Don’t worry this does not cancel you’re booking.There
+      will be a pop-up with all the details of your travel itinerary. Once you are
+      convinced of your selection, click “Cancel Ticket”. There is a possibility that
+      the refund amount will be unknown at this stage.That’s it - you’re done!! We
+      will process your refund within 24 hours. Depending on your mode of payment,
+      this may take between 3 to 14 working days to show up on your account statement.
+  utter_flight_cancelled_by_airline_get_refund:
+  - text: You are entitled to a full refund if airline cancels the flight.First, we
+      request you to cancel your booking online.Once you have done this, please send
+      an email to service.bank@kotak.com along with your Trip ID. Do mention about
+      your flight cancellation. After verification, we will make sure that you get
+      a full refund.
+  utter_cancellation_charges:
+  - text: Cancellation charges totally depend on the airline, sector, class of booking,
+      and time of cancellation. You can check fare rules online, mentioned on the
+      booking page for further details.Note, Along with charges levied by airlines,
+      we additionally charges Rs. 250 per passenger, per sector.
+  utter_till_when_i_cancel_tickets:
+  - text: You can cancel your tickets no later than 3 hours before your flight’s departure.
+      If it’s later than 3 hours, you need to directly contact the airline for cancellation.
+  utter_on_cancellation_get_refund:
+  - text: Your money will be directly credited to your bank account (same account
+      through which payment for booking was made). For example, if you used your credit
+      card, we will make an appropriate charge reversal. If you used your debit card,
+      we will credit the money back to the debit card.
+  utter_time_taken_to_process_refund:
+  - text: We usually process the refund within 4 working days of cancellation. However,
+      it may take slightly longer to reflect in your account statement depending upon
+      your bank. We’ve noticed that it takes about 14 working days for most refunds
+      to hit their respective accounts.
+  utter_no_fund_received_even_after_many_days:
+  - text: We’re extremely sorry for delay. Do register your complaint with us through
+      our call center or support email id and we will get back to you soon.
+  utter_how_to_make_changes_to_flight_reservation:
+  - text: For all bookings, we treat modifications as cancellations and new bookings.
+      So, you’ll have to cancel your existing booking and make a new one.
+actions:
+- action_get_weather
